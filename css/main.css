@@ -116,3 +116,46 @@ body{
     line-height: 30px;
     margin-right: 5px;
 }
+.gallery{
+    background: #f2f2f2;
+}
+.contender-galeria{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.img-gallery{
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0 , 0, .6);
+    cursor: pointer;
+}
+.imagen-light{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+.cargar-imagen{
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+.show-imagen{
+    transform: scale(1);
+}
+.close{
+    position: absolute;
+    top:45px;
+    right: 275px;
+    width: 30px;
+    cursor: pointer;
+}
