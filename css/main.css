@@ -27,6 +27,7 @@ body{
     background-position:center ;
 }
 .head{
+    text-align: center;
     padding: 0;
     height: 100%;
     display: flex;
@@ -37,6 +38,7 @@ body{
 }
 .burger{
     position: fixed;
+    z-index: 10;
     top: 30px;
     right: 30px;
     background: #fff;
@@ -125,6 +127,7 @@ body{
     flex-wrap: wrap;
 }
 .img-gallery{
+    object-fit: cover;
     width: 30%;
     display: block;
     margin-bottom: 15px;
@@ -133,6 +136,7 @@ body{
 }
 .imagen-light{
     position: fixed;
+    background: rgba(0, 0 , 0, .5);
     width: 100%;
     height: 100%;
     top: 0;
@@ -148,6 +152,7 @@ body{
     transform: translate(0);
 }
 .cargar-imagen{
+    object-fit: cover;
     width: 60%;
     border-radius: 10px;
     transform: scale(0);
@@ -158,10 +163,11 @@ body{
 }
 .close{
     position: absolute;
-    top:45px;
-    right: 275px;
+    top:130px;
+    right: 45px;
     width: 30px;
     cursor: pointer;
+    background-color: rgba(246, 240, 240, 0.8);
 }
 .expert{
     display: flex;
@@ -241,4 +247,78 @@ footer{
     height: 2px;
     background: #fff;
     margin-bottom: 60px;
+}
+
+@media screen and (max-width:800px){
+    .menu-nav{
+        width: 50vw;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .contenedor-servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .flastline-servicio{
+        width: 80%;
+    }
+    .service{
+        margin-bottom: 30px;
+    }
+    .cargar-imagen{
+        width: 80%;
+    }
+    .img-gallery{
+        width: 45%;
+    }
+    .cont-expert{
+        width: 80%;
+    }
+    .footer-content{
+        justify-content: center;
+    }
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .social-media-icon{
+        margin-left: 0;
+    }
+    .social-media i {
+        margin-left: 0;
+    }
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .menu-nav{
+        width: 65vw;
+    }
+    .burger{
+        top: 20px;
+        right: 20px;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+    .cargar-imagen{
+        width:95%;
+    }
+    .img-gallery{
+        width: 95%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 90%;
+    }
 }
